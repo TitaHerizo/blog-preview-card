@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'FigtreeExtraBold';
+    src: url('/assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'FigtreeSemiBold';
+    src: url('/assets/fonts/static/Figtree-SemiBold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: FigtreeSemiBold;
+}
+
+.card-container{
+    background-color: hsl(0, 0%, 100%);
+
+    width: 320px;
+    height: 460px;
+
+    margin: 150px auto 100px auto;
+
+    padding: 20px;
+
+    border-radius: 5%;
+
+    filter: drop-shadow(7px 7px);
+
+    border: 1px solid hsl(0, 0%, 7%);
+}
+
+.card-container:hover{
+    cursor:pointer;
+    filter: drop-shadow(15px 15px);
+}
+
+.illustration {
+    width: 320px;
+    border-radius: 5%;
+}
+
+.category{
+
+    font-family: FigtreeExtraBold;
+    margin: 20px 0 0 0;
+
+    background-color: hsl(47, 88%, 63%);
+
+    padding: 5px 5px;
+
+    width: 70px;
+
+    text-align: center;
+
+    border-radius: 5%;
+}
+
+.publication{
+    margin: 15px 0 0px 0;
+
+    font-size: 14px;
+}
+
+.title{
+    margin: 20px 0;
+    font-family: FigtreeExtraBold;
+}
+
+.title:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+.description{
+    color: hsl(0, 0%, 50%);
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    margin: 20px 0px;
+    font-family: FigtreeExtraBold;
+}
+
+.author>img{
+    width: 30px;
+    
+}
+
+@media screen and (max-width:375px) {
+    .card-container{
+    
+        width: 300px;
+        height: 460px;
+    
+        margin: 50px auto 100px auto;
+    
+        padding: 20px;
+    
+        border-radius: 5%;
+    }
+
+    .illustration {
+        width: 300px;
+        border-radius: 5%;
+    }
+
+    .description{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    .card-container{
+    
+        width: 250px;
+        height: 400px;
+    
+        margin: 75px auto 100px auto;
+    
+        padding: 15px;
+    
+        border-radius: 5%;
+    }
+
+    .category{
+        margin: 15px 0;
+    }
+
+    .publication {
+        margin: 8px 0;
+    }
+
+    .illustration {
+        width: 250px;
+        border-radius: 5%;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .description{
+        font-size: 12px;
+    }
+    
+}
